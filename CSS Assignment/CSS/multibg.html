@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        .item1{
+            height: 100vh;
+            width: 60vw;
+            background-color: #202020;
+            display: flex;
+            align-items:center ;
+            justify-content: space-between;
+        }
+        .item2{
+            height: 100vh;
+            width: 40vw;
+            background-image:url(../Image/tab.png);
+            background-size: 40vw 100vh;
+        }
+        .p2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            gap:60px;
+            color: white;
+        }
+        .red{
+            color: red;
+        }
+        .lorem{
+            font-size: small;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+        .p3{
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+            
+        }
+        .logo{
+            height: 60px;
+            width:60px;
+            background-color:  #f4f5f9;
+            border-radius: 50%;
+            position: relative;
+            top: 45px;
+            left: 30px;
+        }
+        #logo1{
+            background-image: url(../Image/tv.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #logo2{
+            background-image: url(../Image/paper.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #logo3{
+            background-image: url(../Image/camera.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .p1{
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 30px;
+            gap: 10px;
+        }
+        .pipe2{
+            height: 34px;
+            width: 1px;
+            border: 1px solid #e74c3c;
+        }
+        .pipe{
+            height: 34px;
+            width: 1px;
+            border: 1px solid #4d4140;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item1">
+            <div class="p1">
+                <div class="pipe"></div>
+                <div class="pipe2"></div>
+                <div class="pipe"></div>
+            </div>
+            <div class="p2">
+                <h1>OUR SERVICES</h1>
+                
+                <div class="lorem">
+                    <div class="red">WEB DESIGN</div>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been </div>
+                    <div> the industry's standard dummy text ever.</div>
+                </div>
+                
+                <div class="lorem">
+                    <div class="red">PRINT DESIGN</div>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>  
+                    <div>Lorem Ip sum has been the industry's standard dummy text ever.</div>
+                </div>
+                
+                <div class="lorem">
+                    <div class="red">PHOTOGRAPHY</div>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been </div>
+                    <div>the industry's standard dummy text ever.</div>
+                </div>
+            </div>
+            <div class="p3">
+                <div class="logo" id="logo1"></div>
+                <div class="logo" id="logo2"></div>
+                <div class="logo" id="logo3"></div>
+            </div>
+        </div>
+        <div class="item2"></div>
+    </div>
+</body>
+</html>

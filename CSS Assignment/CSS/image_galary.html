@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(10,1fr);
+            background-color: black;
+        }
+        .item{
+           border: 5px solid black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #item1{
+            grid-column: 1/9; 
+            grid-row: 1/4;
+            background-image: url(../Image/nature7.jpeg);
+        }
+        #item2{
+            grid-column: 9/13; 
+            grid-row: 1/4;
+            background-image: url(../Image/nature1.jpg);
+        }
+        #item3{
+            grid-column: 13/16;
+            grid-row: 1/11;
+        }
+        #item4{
+            grid-column: 1/4;
+            grid-row: 4/7;
+            background-image: url(../Image/nature2.jpg);
+        }
+        #item5{
+            grid-column: 4/10;
+            grid-row: 4/7;
+            background-image: url(../Image/nature10.jpeg);
+        }
+        #item6{
+            grid-column: 10/13;
+            grid-row: 4/7;
+            background-image: url(../Image/nature9.jpeg);
+        }
+        #item7{
+            grid-column: 1/7;
+            grid-row: 7/10;
+            background-image: url(../Image/nature3.jpg);
+        }
+        #item8{
+            grid-column: 7/13;
+            grid-row: 7/10;
+            background-image: url(../Image/nature11.jpeg);
+        }
+        #item9{
+            grid-column: 1/5;
+            grid-row: 10/11;
+            background-image: url(../Image/nature4.jpg);
+        }
+        #item10{
+            grid-column: 5/9;
+            grid-row: 10/11;
+            background-image: url(../Image/nature5.jpg);
+        }
+        #item11{
+            grid-column: 9/13;
+            grid-row: 10/11;
+            background-image: url(../Image/nature8.jpeg);
+        }
+        .nav{
+            color: white;
+            padding-top: 30PX;
+            
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            list-style-type: none;
+            
+        }
+        .box{
+            padding-top: 35px;
+        }
+        .box1{
+            font-size: 30px;
+        }
+        .box:hover{
+            color: red;
+        }
+        i{
+            position: relative;
+            top: 40px;
+            left: 150px;
+            color: white;
+        }
+        .twiter{
+            padding-left: 20px;
+        }
+        .insta{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item nav" id="item3">
+                <ul>
+                    <li class="box1">Shutter</li> 
+                    <li class="box">HOME</li>
+                    <li class="box">PHOTOS</li>
+                    <li class="box">BIO</li>
+                    <li class="box">BLOG</li>
+                    <li class="box">CONTACT</li>
+                </ul>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter twiter"></i>
+                <i class="fa-brands fa-instagram insta"></i>
+        </div>
+        <div class="item" id="item4"></div>
+        <div class="item" id="item5"></div>
+        <div class="item" id="item6"></div>
+        <div class="item" id="item7"></div>
+        <div class="item" id="item8"></div>
+        <div class="item" id="item9"></div>
+        <div class="item" id="item10"></div>
+        <div class="item" id="item11"></div>
+    </div>
+</body>
+</html>
