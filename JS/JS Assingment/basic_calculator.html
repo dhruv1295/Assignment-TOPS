@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+        }
+
+        
+        .split {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 300px;
+
+        }
+
+        #operator {
+            width: 230px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            /* background-color: aqua; */
+           
+
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="font-size: 40px;">Maths Operations</h1>
+        <form action="">
+            <div class="item">
+                <div>Enter 1st number:</div>
+                <input type="number" name="" id="num1">
+            </div>
+            <div class="item">
+                <div>Enter 2st number:</div>
+                <input type="number" name="" id="num2">
+            </div>
+        </form>
+        <div class="split">
+            <div id="operator">
+                <button class="box" id="plus" onclick="plus()">+</button>
+                <button class="box" id="minus" onclick="minus()">-</button>
+                <button class="box" id="multi" onclick="multi()">*</button>
+                <button class="box" id="devide" onclick="devide()">/</button>
+                <button class="box" id="module" onclick="module()">%</button>
+            </div>
+            <div id="answer">Answer is :</div>
+        </div>
+    </div>
+
+    <script>
+        let answer = document.getElementById("answer")
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+        function plus() {
+            let result = Number(num1.value) + Number(num2.value)
+            answer.innerText = `Answer : ${result}`
+            console.log(result);
+        }
+        function minus() {
+            let result = Number(num1.value) - Number(num2.value)
+            answer.innerText = `Answer : ${result}`
+            console.log(result);
+        }
+        function multi() {
+            let result = Number(num1.value) * Number(num2.value)
+            answer.innerText = `Answer : ${result}`
+            console.log(result);
+        }
+        function devide() {
+            let result = Number(num1.value) / Number(num2.value)
+            answer.innerText = `Answer : ${result}`
+            console.log(result);
+        }
+        function module() {
+            let result = Number(num1.value) % Number(num2.value)
+            answer.innerText = `Answer : ${result}`
+            console.log(result);
+        }
+    </script>
+</body>
+
+</html>

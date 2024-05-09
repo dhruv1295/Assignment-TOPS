@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 50%;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        img {
+            display: none;
+            height: 300px;
+            width: 100%;
+        }
+
+        .item1 {
+            display: block;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            bottom: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <img src="../images/nature1.jpg" alt="" class="item item1">
+        <img src="../images/nature2.jpg" alt="" class="item">
+        <img src="../images/nature3.jpg" alt="" class="item">
+        <img src="../images/nature4.jpg" alt="" class="item">
+        <img src="../images/nature5.jpg" alt="" class="item">
+        <div class="btn">
+            <button onclick="left()">&larr;</button>
+            <button onclick="right()">&rarr;</button>
+        </div>
+    </div>9
+    <script>
+        let image = document.querySelectorAll(".item");
+        let count = 0;
+        function right() {
+            count++;
+            for (let i = 0; i < image.length; i++) {
+                image[i].style.display = "none";
+            }
+            if (count >= image.length) {
+                count = 0;
+            }
+            image[count].style.display = "block";
+
+        }
+
+
+        
+        function left() {
+            count--;
+            for (let j = 0; j < image.length; j++) {
+                image[j].style.display = "none";
+            }
+            if (count >= image.length) {
+                count = 0;
+            }
+            else if (count < 0) {
+                count = 4;
+            }
+            image[count].style.display = "block";
+        }
+
+
+        function slideshow() {
+            for (let a = 0; a < image.length; a++){
+                image[a].style.display="none";
+            }
+            if(count>=image.length){
+                count=0;
+            }
+            image[count].style.display="block";
+            count++
+        }
+        setInterval(slideshow,4000);
+
+    </script>
+</body>
+
+</html>
